@@ -26,7 +26,7 @@ app.use(function(req, res, next) {
   
 app.get("/download", (req, res) => {
   downloadAndParse();
-  return "[]";
+  res.end("200");
 });
 
 app.listen(port, () => console.log(`BAG COVID API listening on port ${port}!`));
